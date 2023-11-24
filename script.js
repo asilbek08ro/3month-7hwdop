@@ -7,22 +7,18 @@ text.style.display = 'none';
 
 btn.onclick = () => {
     if (text.style.display == 'none') {
-        text.style.display = 'block';
-        // Делаем кнопку "Нет" неактивной после нажатия "Да"
+
+text.style.display = 'block';
         btn2.disabled = true;
-        
-        // Сбрасываем положение wrapper в центр
-        wrapper.style.left = '50%';
+
+wrapper.style.left = '50%';
         wrapper.style.top = '50%';
         wrapper.style.transform = 'translate(-50%, -50%)';
     }
-    // Если текст видимый, не делаем ничего (не скрываем его)
 }
 
 btn2.onclick = () => {
-    // Изменяем положение wrapper случайным образом
     wrapper.style.left = Math.round(Math.random() * (90 - 10) + 10) + '%';
     wrapper.style.top = Math.round(Math.random() * (80 - 20) + 20) + '%';
-    // При каждом клике на "Нет" делаем текст видимым
     text.style.display = 'none';
 }
