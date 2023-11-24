@@ -56,7 +56,19 @@ body {
 
 .text {
     color: #252525;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    margin-top: 30px; 
+}
+
 
 @media only screen and (max-width: 600px) {
     .border {
