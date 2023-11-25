@@ -2,7 +2,6 @@ let btn = document.getElementById('btn');
 let text = document.getElementById('text');
 let wrapper = document.getElementById('wrapper');
 let btn2 = document.getElementById('btn2');
-let myImage = document.getElementById('myImage'); 
 
 text.style.display = 'none';
 
@@ -15,7 +14,6 @@ btn.onclick = () => {
         wrapper.style.top = '50%';
         wrapper.style.transform = 'translate(-50%, -50%)';
 
-        myImage.style.display = 'block';
     }
 }
 
